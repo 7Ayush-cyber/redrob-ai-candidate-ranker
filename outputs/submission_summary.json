@@ -1,0 +1,9 @@
+{
+    "rows": 100,
+    "candidate_ids_unique": true,
+    "rank_min": 1,
+    "rank_max": 100,
+    "score_min": 0.0,
+    "score_max": 1.0,
+    "output_file": "D:\\redrob-ai-ranker\\outputs\\team_PPT_Se_Placement.csv"
+}
