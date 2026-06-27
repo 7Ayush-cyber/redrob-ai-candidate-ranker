@@ -1,0 +1,115 @@
+```yaml
+# ============================================================================
+# Redrob Hackathon Submission Metadata
+# ============================================================================
+
+team_name: "PPT Se Placement"
+
+# ============================================================================
+# Primary Contact
+# ============================================================================
+
+primary_contact:
+  name: "Tushar Soni"
+  email: "t.soni@iitg.ac.in"
+  phone: "+91-7340303998"
+
+team_members:
+  - name: "Tushar Soni"
+    email: "t.soni@iitg.ac.in"
+    role: "Team Lead and Data Engineer"
+
+  - name: "Ayush Kumar"
+    email: "ayushk.4021@iitg.ac.in"
+    role: "ML Engineer"
+
+# ============================================================================
+# Repository & Demo
+# ============================================================================
+
+github_repo: "https://github.com/7Ayush-cyber/redrob-ai-candidate-ranker"
+
+sandbox_link: "https://redrob-ai-candidate-ranker.streamlit.app/"
+
+reproduce_command: "python rank.py --candidates ./data/candidates.jsonl --out ./outputs/team_PPT_Se_Placement.csv"
+
+# ============================================================================
+# Compute Environment
+# ============================================================================
+
+compute:
+  platform: "Windows 11 Laptop"
+  cpu_cores: 8
+  ram_gb: 16
+  python_version: "3.12.10"
+  os: "Windows 11"
+
+  uses_gpu_for_inference: false
+  has_network_during_ranking: false
+
+  pre_computation_required: true
+  pre_computation_time_minutes: 90
+
+# ============================================================================
+# AI Tools Declaration
+# ============================================================================
+
+ai_tools_used:
+  - "ChatGPT"
+
+ai_usage_summary: |
+  ChatGPT was used as an engineering assistant throughout the project for
+  architecture discussions, implementation guidance, debugging support,
+  documentation, code review, and project organization.
+
+  All ranking logic, feature engineering, retrieval strategy, reranking
+  pipeline, scoring methodology, and project integration were implemented
+  and validated by the team. No hosted LLM APIs or external AI services are
+  used during the candidate ranking stage.
+
+# ============================================================================
+# Methodology Summary
+# ============================================================================
+
+methodology_summary: |
+  We developed a fully offline AI-powered candidate ranking system designed
+  for large-scale recruitment. The pipeline begins with dataset auditing,
+  schema validation, duplicate detection, and candidate quality assessment.
+
+  A structured Job Description (JD Compass) is created by extracting role
+  requirements, mandatory skills, preferred skills, experience expectations,
+  and scoring dimensions.
+
+  Candidate profiles are parsed into structured representations using
+  extensive feature engineering covering professional experience, education,
+  certifications, technical skills, recruiter engagement metrics, GitHub
+  activity, profile completeness, notice period, and other hiring signals.
+
+  Candidate retrieval combines BM25 lexical search with dense semantic
+  retrieval using the BAAI/bge-small-en-v1.5 embedding model. The two
+  retrieval methods are fused using Reciprocal Rank Fusion (RRF) to maximize
+  recall.
+
+  Retrieved candidates are reranked using the
+  cross-encoder/ms-marco-MiniLM-L-6-v2 Cross Encoder, enabling deep semantic
+  matching between candidate profiles and the job description.
+
+  Finally, concise evidence-based reasoning is generated for each shortlisted
+  candidate, normalized scores are assigned, and the final ranked submission
+  CSV is produced.
+
+  Heavy computations such as embedding generation and indexing are performed
+  offline during preprocessing, allowing the final ranking stage to execute
+  efficiently on CPU without requiring internet connectivity.
+
+# ============================================================================
+# Declarations
+# ============================================================================
+
+declarations:
+  read_submission_spec: true
+  code_is_original_work: true
+  no_collusion: true
+  honeypot_check_done: false
+  reproduction_tested: true
+```
