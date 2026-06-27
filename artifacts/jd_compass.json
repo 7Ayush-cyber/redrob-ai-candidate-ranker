@@ -1,0 +1,119 @@
+{
+    "jd_summary": {
+        "role_title": "Senior AI Engineer",
+        "role_goal": "Build and ship practical AI systems involving retrieval, ranking, LLMs, evaluation, and production engineering.",
+        "must_have_skills": [
+            "python",
+            "machine learning",
+            "llm",
+            "embeddings",
+            "retrieval",
+            "vector search",
+            "ranking",
+            "evaluation"
+        ],
+        "strong_preferred_skills": [
+            "rag",
+            "fine tuning",
+            "transformers",
+            "pytorch",
+            "faiss",
+            "elasticsearch",
+            "docker",
+            "aws",
+            "gcp",
+            "langchain",
+            "langgraph"
+        ],
+        "experience_preferences": {
+            "minimum_years": 3,
+            "ideal_years_min": 4,
+            "ideal_years_max": 10,
+            "production_experience_required": true,
+            "recent_production_code_preferred": true
+        },
+        "behavioral_preferences": {
+            "open_to_work_bonus": true,
+            "recent_activity_bonus": true,
+            "high_response_rate_bonus": true,
+            "short_notice_period_bonus": true
+        },
+        "negative_signals": [
+            "only_recent_langchain_or_openai_experience",
+            "no_recent_production_code",
+            "keyword_stuffing",
+            "career_timeline_inconsistency"
+        ]
+    },
+    "skill_groups": {
+        "core_ai_ml": [
+            "machine learning",
+            "deep learning",
+            "llm",
+            "large language model",
+            "transformers",
+            "pytorch",
+            "tensorflow"
+        ],
+        "retrieval_ranking": [
+            "embeddings",
+            "retrieval",
+            "vector search",
+            "vector database",
+            "faiss",
+            "elasticsearch",
+            "bm25",
+            "ranking",
+            "reranking",
+            "semantic search",
+            "rag"
+        ],
+        "production_engineering": [
+            "python",
+            "docker",
+            "aws",
+            "gcp",
+            "azure",
+            "api",
+            "fastapi",
+            "deployment",
+            "production",
+            "mlops"
+        ],
+        "evaluation_and_quality": [
+            "evaluation",
+            "benchmarking",
+            "testing",
+            "monitoring",
+            "experimentation",
+            "ab testing",
+            "metrics"
+        ]
+    },
+    "scoring_dimensions": {
+        "semantic_role_fit": {
+            "description": "How closely the candidate profile text matches the Senior AI Engineer role.",
+            "weight": 0.3
+        },
+        "must_have_skill_match": {
+            "description": "Match on core AI, ML, retrieval, ranking, and evaluation skills.",
+            "weight": 0.2
+        },
+        "career_and_seniority_fit": {
+            "description": "Whether experience level, title progression, and role history fit a senior AI engineering role.",
+            "weight": 0.15
+        },
+        "production_evidence": {
+            "description": "Evidence of building and shipping real systems, APIs, deployment, cloud, or MLOps work.",
+            "weight": 0.15
+        },
+        "behavioral_readiness": {
+            "description": "Open-to-work status, activity, recruiter responsiveness, notice period, and interview completion.",
+            "weight": 0.1
+        },
+        "trust_and_consistency": {
+            "description": "Profile completeness, career consistency, trap-risk flags, and evidence quality.",
+            "weight": 0.1
+        }
+    }
+}

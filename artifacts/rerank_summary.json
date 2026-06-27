@@ -1,0 +1,6 @@
+{
+    "retrieval_pool_size": 1500,
+    "final_shortlist_size": 100,
+    "top_final_score": 78.01663351767309,
+    "embedding_reranker_model": "cross-encoder/ms-marco-MiniLM-L-6-v2"
+}

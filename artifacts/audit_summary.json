@@ -1,0 +1,28 @@
+{
+    "total_candidates": 100000,
+    "original_audit_shape": [
+        100000,
+        20
+    ],
+    "flagged_audit_shape": [
+        100000,
+        31
+    ],
+    "number_of_added_columns": 11,
+    "flag_columns_added": [
+        "flag_many_skills",
+        "flag_low_experience_many_roles",
+        "flag_bad_profile_completeness",
+        "flag_very_low_response_rate",
+        "flag_very_slow_response",
+        "flag_long_notice_period",
+        "flag_no_github_for_technical_profile",
+        "flag_low_interview_completion",
+        "hard_risk_count",
+        "soft_risk_count",
+        "total_risk_score"
+    ],
+    "max_total_risk_score": 10,
+    "mean_total_risk_score": 1.5665,
+    "candidates_with_any_risk": 75581
+}
