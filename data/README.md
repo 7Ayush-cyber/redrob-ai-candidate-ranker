@@ -10,6 +10,5 @@ Typical files include:
 - sample_candidates.json
 - candidate_schema.json
 - job_description.docx
-- sample_submission.csv
 
 After the dataset is added, the complete pipeline can be executed using the Streamlit application or the command-line interface.
