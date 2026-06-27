@@ -16,6 +16,9 @@ from src import reasoning
 # -------------------------------------------------------
 # Streamlit Configuration
 # -------------------------------------------------------
+Path("data").mkdir(parents=True, exist_ok=True)
+Path("artifacts").mkdir(parents=True, exist_ok=True)
+Path("outputs").mkdir(parents=True, exist_ok=True)
 
 st.set_page_config(
     page_title="Redrob AI Candidate Ranker",
